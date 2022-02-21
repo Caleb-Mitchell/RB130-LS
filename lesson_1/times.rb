@@ -1,6 +1,6 @@
 def times(number)
   counter = 0
-  while counter < number do
+  while counter < number
     yield(counter)
     counter += 1
   end
