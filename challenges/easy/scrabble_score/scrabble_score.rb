@@ -19,6 +19,6 @@ class Scrabble
   end
 
   def self.score(word)
-
+    Scrabble.new(word).score
   end
 end
