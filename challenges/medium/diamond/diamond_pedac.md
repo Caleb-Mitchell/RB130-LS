@@ -23,36 +23,35 @@ rules:
 
 mm:
 
-starting with A, print a number of outer spaces equal to the number of the letter,
-minus 1, then print A, then the same number of outer spaces, then a newline
+draw the top point
+  starting with A, print a number of outer spaces equal to the index of the
+  input letter, then print A, then the same number of outer spaces, then a
+  newline
 
-for the next letter, print one less outer space, the letter, one inner_space, the
-letter, then the same number of outer spaces, then a newline
+draw the inner top half of the diamond
 
-this continues until the input letter is reached, and the whole process is
-reversed
+  for the next letter, print one less outer space, the next letter, one
+  inner_space, the letter, then the same number of outer spaces, then a newline
+
+this continues until the input letter is reached and printed
+
+draw the inner bottom half of the diamon
+
+draw the bottom point
 
 # Algo
 
 - create an alphabet array
 - set a var alpha_counter to zero to track current letter in alpha array
-- set a var outer_spaces to index of input letter in alpha array
-- set a var inner_spaces to 0
-- set a var num_letters to 1
+- set var input_index to the index of the input letter in the alphabet array
 
-- until alpha_counter is equal to the index of the input string:
-  - print outer spaces
-  - print letter in alpha_array at alpha_counter
-  - if num_spaces is 1, print outer spaces, then next
-  - print inner_spaces
-  - print letter in alpha_array at alpha_counter
-  - print outer_spaces
-  - print a newline
+- set a var outer_spaces to input index
+- set a var inner_spaces to 1
 
-  - increment num_letters by 1 unless it is already 2
-  - increment alpha_counter by 1
-  - decrement outer_spaces by 1
-  - increment inner_spaces by 1
-
-- Draw bottom half
-
+- DRAW THE DIAMOND POINT
+  - spaces equal to input_index
+  - if input letter is 'A', return string after drawing one point
+- DRAW THE INNER TOP HALF if input_index > 1
+- DRAW THE MIDDLE
+- DRAW THE INNER BOTTOM HALF if input_index > 1
+- DRAW THE DIAMOND POINT
