@@ -3,9 +3,15 @@
 
 Write a simple linked list implementation.
 
-The simplest kind of linked list is a singly linked list. Each element in the
-list contains data and a "next" field pointing to the next element in the list
-of elements. This variant of linked lists is often used to represent sequences
+The simplest kind of linked list is a singly linked list.
+
+Each element in the list contains:
+
+- data 
+- a "next" field pointing to the next element in the list
+of elements.
+
+This variant of linked lists is often used to represent sequences
 or push-down stacks (also called a LIFO stack; Last In, First Out).
 
 Let's create a singly linked list whose elements may contain a range of data
