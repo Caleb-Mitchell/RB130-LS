@@ -66,3 +66,5 @@ class Diamond
     end
   end
 end
+
+puts Diamond.make_diamond('Z')

@@ -22,3 +22,7 @@ class Scrabble
     Scrabble.new(word).score
   end
 end
+
+
+
+puts Scrabble.new('apostrophe').score
