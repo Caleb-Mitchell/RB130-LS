@@ -17,7 +17,7 @@ class BeerSong
       result << if num == last_verse_num
                   verse(num)
                 else
-                  verse(num) + "\n"
+                  "#{verse(num)}\n"
                 end
     end
     result
